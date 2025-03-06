@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md py-4 px-8 flex justify-center space-x-6">
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#skills" class="hover:text-blue-500">Skills</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <h1 class="text-4xl font-bold">Michael Sollazzo</h1>
+        <p class="text-xl mt-2">Software Developer | Go Enthusiast</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-10 max-w-2xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+        <p class="text-lg">Short introduction about your background and what you do.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-10 bg-gray-200">
+        <h2 class="text-3xl font-semibold mb-4 text-center">Projects</h2>
+        <div id="projects-container" class="grid gap-6 md:grid-cols-2"></div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-10 max-w-2xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-4">Skills</h2>
+        <p class="text-lg">Go, Python, JavaScript, APIs, etc.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-10 bg-gray-200 text-center">
+        <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+        <p>Email: msollazzo08@gmail.com</p>
+        <p>GitHub: <a href="#" class="text-blue-500">github.com/sollazzo08</a></p>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Load projects from JSON
+        fetch("public/data/projects.json")
+            .then(response => response.json())
+            .then(data => {
+                let projectsContainer = document.getElementById("projects-container");
+                data.forEach(project => {
+                    let projectElement = `
+                        <div class="p-6 bg-white shadow-md rounded-lg">
+                            <h3 class="text-xl font-semibold">${project.name}</h3>
+                            <p class="text-gray-700">${project.description}</p>
+                            <a href="${project.link}" target="_blank" class="text-blue-500 hover:underline">GitHub Repo</a>
+                        </div>`;
+                    projectsContainer.innerHTML += projectElement;
+                });
+            });
+    </script>
+
+</body>
+</html>

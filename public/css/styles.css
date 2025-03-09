@@ -1,21 +1,17 @@
-/* Enable smooth scrolling for navigation */
 html {
   scroll-behavior: smooth;
 }
 
-/* Improve text readability */
 body {
   font-family: Arial, sans-serif;
 }
 
-/* Adjust container widths for better readability */
 section {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
 }
 
-/* Improve link styles */
 a {
   text-decoration: none;
 }

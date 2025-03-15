@@ -1,12 +1,12 @@
 import Link from "next/link";
-import "@/app/globals.css"; 
+import "@/app/globals.css";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="background text-foreground min-h-screen flex flex-col">
+    <html className="bg-amber-600" lang="en">
+      <body className="flex flex-col items-center min-h-screen">
         {/* Navbar */}
-        <nav className="flex justify-between p-4 shadow bg-gray-800 text-white">
+        <nav className="flex justify-between max-w-2xl w-full p-4 w-shadow bg-gray-800 text-white">
           <Link href="/" className="text-xl font-bold ">Portfolio</Link>
           <div className="space-x-4">
             <Link href="/about" className="hover:text-gray-300">About</Link>
@@ -15,10 +15,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </nav>
 
         {/* Main Content */}
-        <main className="flex-grow p-6">{children}</main>
+        <main className="flex max-w-2xl w-full bg-white flex-grow">{children}</main>
 
         {/* Footer */}
-        <footer className="text-center p-4 mt-8 border-t color-mint-500">
+        <footer className="flex max-w-2xl w-full text-center p-4 border-t color-mint-500 bg-amber-200">
           © 2025 My Portfolio
         </footer>
       </body>

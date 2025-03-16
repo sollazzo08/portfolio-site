@@ -9,7 +9,6 @@ export default function ProjectsList({ limit }: ProjectsListProps) {
 
   return (
     <section className="max-w-2xl mx-auto p-6">
-      <h2 className="text-3xl font-bold mb-6">Projects</h2>
       <ul className="space-y-4">
         {displayedProjects.map((project: Project, index: number) => (
           <li key={index} className="p-4 border rounded-lg shadow-md bg-white">

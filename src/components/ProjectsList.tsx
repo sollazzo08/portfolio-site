@@ -8,11 +8,11 @@ export default function ProjectsList({ limit }: ProjectsListProps) {
   const displayedProjects = limit ? projects.slice(0, limit) : projects;
 
   return (
-    <section className="max-w-2xl mx-auto p-6">
+    <section className="font-tektur">
       <ul className="space-y-4">
         {displayedProjects.map((project: Project, index: number) => (
-          <li key={index} className="p-4 border rounded-lg shadow-md bg-white">
-            <h3 className="text-xl font-semibold">{project.title}</h3>
+          <li key={index} className="">
+            <h3 className="text-lg">{project.title}</h3>
             <p className="text-gray-600">{project.description}</p>
             <a
               href={project.github}

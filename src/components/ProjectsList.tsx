@@ -21,9 +21,13 @@ export default function ProjectsList({ limit }: ProjectsListProps) {
             >
               View on GitHub
             </a>
+            <hr></hr>
           </li>
+
         ))}
+       
       </ul>
+
     </section>
   );
 }

@@ -31,7 +31,7 @@ export default function Home() {
       <div className="flex flex-col space-y-7 mt-10 bg-[#191919]">
       <h1 className="text-2xl underline">Recent Projects</h1>
           <ProjectsList limit={3} />
-          <Link href="/projects">Learn More</Link>
+          <Link href="/projects">View More</Link>
       </div>
 
     </div>

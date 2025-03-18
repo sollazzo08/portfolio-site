@@ -40,7 +40,7 @@ export default function AboutMe() {
       <div className="relative border-l-4 text-zinc-400 pl-6">
         {timeline.map((event, index) => (
           <div key={index} className="relative mb-10 pl-6">
-            <div className="absolute left-[-12px] top-0 w-6 h-6">___</div>
+            <div className="absolute left-[-16px] top-4 w-8 h-[2px] bg-gray-400"></div>
             <h2 className="text-2xl font-semibold">{event.year}</h2>
             <h3 className="text-xl font-medium text-gray-700">{event.title}</h3>
             <ul className="list-disc pl-5 text-gray-600">

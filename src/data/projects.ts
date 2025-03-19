@@ -8,19 +8,19 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "bare-budget",
-    description: "A minimal personal budget app.",
+    description: "A simple personal budgeting app for tracking income, expenses, and savings with a minimal, no-frills approach.",
     github: "https://github.com/sollazzo08/bare-budget",
     tech: "TypeScript",
   },
   {
     title: "spotify-clone",
-    description: "Clone of Spotify's mobile app, using React Native + Expo.",
+    description: "A mobile Spotify clone built with React Native and Expo, featuring music playback, playlists, and a sleek UI.",
     github: "https://github.com/sollazzo08/spotify-clone",
     tech: "JavaScript",
   },
   {
     title: "weather-notification-service",
-    description: "Small wrapper around the OpenWeatherAPI for weather updates.",
+    description: "A lightweight microservice that fetches real-time weather updates using the OpenWeatherAPI, designed for easy integration.",
     github: "https://github.com/sollazzo08/weather-notifcation-service",
     tech: "Go",
   },

@@ -15,7 +15,7 @@ export default function Home() {
           className="rounded-md object-cover"
         />
           <div className="flex flex-col ml-10">
-            <div className="text-3xl">
+            <div className="text-3xl text-[#ebeaea]">
               Michael Sollazzo
             </div>
             <div>
@@ -27,11 +27,11 @@ export default function Home() {
           Business analyst and Salsify expert with a background in software development. I specialize in optimizing product information management while leveraging my technical skills to bridge the gap between business needs and technology-driven solutions.
           </p>
       </div>
-      <Link href="/about" className="mt-3">Learn More</Link>
+      <Link href="/about" className="mt-3 underline text-[#ebeaea]">Learn More</Link>
       <div className="flex flex-col space-y-7 mt-10 bg-[#191919]">
-      <h1 className="text-2xl underline">Recent Projects</h1>
+      <h1 className="text-lg underline text-[#ebeaea]">Recent Projects</h1>
           <ProjectsList limit={3} />
-          <Link href="/projects">View More</Link>
+          <Link href="/projects" className="underline text-[#ebeaea]">View More</Link>
       </div>
 
     </div>

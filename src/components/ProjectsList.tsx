@@ -12,8 +12,8 @@ export default function ProjectsList({ limit }: ProjectsListProps) {
       <ul className="space-y-4">
         {displayedProjects.map((project: Project, index: number) => (
           <li key={index} className="">
-            <h3 className="text-lg">{project.title}</h3>
-            <p className="text-gray-600">{project.description}</p>
+            <h3 className="text-lg text-[#ebeaea]">{project.title}</h3>
+            <p className="">{project.description}</p>
             <a
               href={project.github}
               target="_blank"
@@ -21,11 +21,9 @@ export default function ProjectsList({ limit }: ProjectsListProps) {
             >
               View on GitHub
             </a>
-            <hr></hr>
           </li>
-
         ))}
-       
+
       </ul>
 
     </section>

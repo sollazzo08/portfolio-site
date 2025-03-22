@@ -19,11 +19,11 @@ export default function Home() {
               Michael Sollazzo
             </div>
             <div>
-              Analyst and Software Developer
+              Technical Consultant & Developer
             </div>
           </div>
         </section>
-          <p>I am Technical Consultant & Developer who leads all Salsify PIM implementations at Huge | Hero Digital. 
+          <p>I am Technical Consultant & Developer who leads all Salsify PIM implementations at Huge | Hero Digital.
           </p>
       </div>
       <Link href="/about" className="mt-3 underline text-[#ebeaea]">Learn More</Link>

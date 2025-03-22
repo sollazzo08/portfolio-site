@@ -37,12 +37,12 @@ export default function AboutMe() {
       </div>
 
       <h2 className="text-2xl font-bold mb-6 underline text-[#ebeaea]">My Journey</h2>
-      <div className="relative border-l-4 pl-6 border-l-[#284569de]">
+      <div className="relative border-l-4 pl-6 border-l-[#ebeaea]">
         {timeline.map((event, index) => (
           <div key={index} className="relative mb-10 pl-6">
-            <div className="absolute left-[-16px] top-4 w-8 h-[2px] bg-[#284569de]"></div>
-            <h2 className="text-2xl font-semibold text-[#284569de]">{event.year}</h2>
-            <h3 className="text-xl font-medium text-[#ebeaea]">{event.title}</h3>
+            <div className="absolute left-[-16px] top-4 w-8 h-[2px] bg-[#ebeaea]"></div>
+            <h2 className="text-2xl font-semibold text-[#ebeaea]">{event.year}</h2>
+            <h3 className="text-xl font-medium text-[#284569de]">{event.title}</h3>
             <ul className="list-disc pl-5">
               {event.details.map((detail, i) => (
                 <li key={i}>{detail}</li>

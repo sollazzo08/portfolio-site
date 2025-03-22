@@ -33,7 +33,8 @@ export default function AboutMe() {
       <h1 className="text-2xl font-bold mb-8 underline text-[#ebeaea]">About Me</h1>
 
       <div className="mb-10">
-        <p className="text-gray-400">Specializing in PIM platforms, particularly Salsify, bridging the gap between business needs and technical solutions, and providing consulting for product data management.</p>
+        <p className="text-gray-400">I am Technical Consultant & Developer who leads all Salsify PIM implementations at Huge | Hero Digital. From discovery to deployment, I work closely with clients to design and build scalable product data systems that power eCommerce experiences.
+        </p>
       </div>
 
       <h2 className="text-2xl font-bold mb-6 underline text-[#ebeaea]">My Journey</h2>

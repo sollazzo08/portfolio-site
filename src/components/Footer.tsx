@@ -30,9 +30,18 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-2 text-[#ebeaea]">Other</h3>
           <ul className="space-y-2">
-            <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-            <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
-            <li><Link href="/resume" className="hover:text-white">Resume</Link></li>
+            <li>
+             <a href="mailto:msollazzo08@gmail.com" className="hover:text-white">Contact</a>
+            </li>
+              <li>
+                <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white"
+                  >Resume
+                </a>
+             </li>
           </ul>
         </div>
       </div>

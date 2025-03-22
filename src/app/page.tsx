@@ -23,8 +23,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-          <p>
-          Business analyst and Salsify expert with a background in software development. I specialize in optimizing product information management while leveraging my technical skills to bridge the gap between business needs and technology-driven solutions.
+          <p>I am Technical Consultant & Developer who leads all Salsify PIM implementations at Huge | Hero Digital. 
           </p>
       </div>
       <Link href="/about" className="mt-3 underline text-[#ebeaea]">Learn More</Link>

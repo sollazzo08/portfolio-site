@@ -16,8 +16,7 @@ jobs:
       - name: Install dependencies & build/export site
         run: |
           npm ci
-          npm run build
-          npm run export
+          next build
 
       - name: Set up SSH
         run: |

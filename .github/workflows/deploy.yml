@@ -3,7 +3,7 @@ name: 🚀 Deploy Next.js Site to Raspberry Pi
 on:
   push:
     branches:
-      - main
+      - main  # Change if your default branch is different
 
 jobs:
   deploy:
@@ -23,9 +23,9 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.PI_SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -H ${{ secrets.PI_HOST }} >> ~/.ssh/known_hosts
+          ssh-keyscan -p ${{ secrets.PI_PORT }} -H ${{ secrets.PI_HOST }} >> ~/.ssh/known_hosts
 
       - name: Deploy 'out/' to Raspberry Pi
         run: |
-          rsync -avz --delete -e "ssh -i ~/.ssh/id_ed25519" ./out/ \
+          rsync -avz --delete -e "ssh -i ~/.ssh/id_ed25519 -p ${{ secrets.PI_PORT }}" ./out/ \
             ${{ secrets.PI_USER }}@${{ secrets.PI_HOST }}:${{ secrets.PI_TARGET_PATH }}

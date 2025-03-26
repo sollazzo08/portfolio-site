@@ -16,7 +16,7 @@ export default function Home() {
         />
           <div className="flex flex-col ml-10">
             <div className="text-3xl text-[#ebeaea]">
-              Michael Sollazzo
+              Michael Sollazzo - test
             </div>
             <div>
               Technical Consultant & Developer

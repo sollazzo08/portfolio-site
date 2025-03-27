@@ -43,7 +43,7 @@ export default function AboutMe() {
           <div key={index} className="relative mb-10 pl-6">
             <div className="absolute left-[-16px] top-4 w-8 h-[2px] bg-[#ebeaea]"></div>
             <h2 className="text-2xl font-semibold text-[#ebeaea]">{event.year}</h2>
-            <h3 className="text-xl font-medium text-[#284569de]">{event.title}</h3>
+            <h3 className="text-xl font-medium text-blue-300">{event.title}</h3>
             <ul className="list-disc pl-5">
               {event.details.map((detail, i) => (
                 <li key={i}>{detail}</li>

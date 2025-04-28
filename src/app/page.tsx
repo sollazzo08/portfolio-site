@@ -7,14 +7,14 @@ export default function Home() {
       <div className="flex flex-col space-y-7 bg-[#191919]">
         <section className="flex">
           <img
-          src="/IMG_1915.png" // <- regular <img> now
+          src="/mike&sawyer3.jpg"
           alt="Michael Sollazzo"
-          width={80}
-          height={80}
+          width="135"
+          height="135"
           className="rounded-md object-cover"
         />
           <div className="flex flex-col ml-10">
-            <div className="text-3xl text-[#ebeaea]">
+            <div className="mt-7 text-3xl text-[#ebeaea]">
               Michael Sollazzo
             </div>
             <div>

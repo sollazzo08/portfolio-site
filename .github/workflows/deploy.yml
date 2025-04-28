@@ -17,6 +17,7 @@ jobs:
         run: |
           npm ci
           npx next build
+          npx next export
 
       - name: Set up SSH
         run: |

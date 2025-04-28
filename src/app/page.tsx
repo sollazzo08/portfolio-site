@@ -7,11 +7,11 @@ export default function Home() {
     <div className="flex flex-col text-gray-400 font-tektu text-md">
       <div className="flex flex-col space-y-7 bg-[#191919]">
         <section className="flex">
-          <Image
-          src={"/IMG_1915.png"} // Replace with actual path
+          <img
+          src="/IMG_1915.png" // <- regular <img> now
           alt="Michael Sollazzo"
-          width={80} // Adjust as needed
-          height={80} // Adjust as needed
+          width={80}
+          height={80}
           className="rounded-md object-cover"
         />
           <div className="flex flex-col ml-10">

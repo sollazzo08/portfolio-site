@@ -27,7 +27,7 @@ export default function Home() {
               Michael Sollazzo
             </div>
             <div>
-              Technical Consultant & Developer
+              Business Analyst & Developer
             </div>
           </div>
         </section>

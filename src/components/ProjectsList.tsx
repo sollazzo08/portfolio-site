@@ -1,5 +1,7 @@
 import { projects, Project } from "../data/projects";
 
+import {motion} from 'framer-motion';
+
 type ProjectsListProps = {
   limit?: number;
 };
@@ -9,7 +11,12 @@ export default function ProjectsList({ limit }: ProjectsListProps) {
 
   return (
     <section className="font-tektur">
-<ul className="space-y-4">
+<motion.ul
+  initial={{ opacity: 0, x: -50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1.5, ease: 'easeOut' }}
+  className="space-y-4"
+>
   {displayedProjects.map((project: Project, index: number) => (
       <li
     key={index}
@@ -30,8 +37,7 @@ export default function ProjectsList({ limit }: ProjectsListProps) {
   </li>
 
   ))}
-</ul>
-
+</motion.ul>
     </section>
   );
 }

@@ -1,3 +1,7 @@
+"use client"
+
+import {motion} from 'framer-motion'
+
 export default function AboutMe() {
   const timeline = [
     {
@@ -31,14 +35,24 @@ export default function AboutMe() {
   return (
     <div className="max-w-4xl mx-auto px-6">
       <h1 className="text-2xl font-bold mb-8 underline text-[#ebeaea]">About Me</h1>
+      <motion.div
+          initial={{ opacity: 0, scale: 0.95 }} // Start hidden and a little lower
+          animate={{ opacity: 1, scale: 1 }}  // Animate to fully visible and back to normal position
+          transition={{ duration: 1.5, ease: 'easeOut' }} // Timing
+          className="mb-10"
+      >
 
-      <div className="mb-10">
         <p className="text-gray-400">I am Technical Consultant & Developer who leads all Salsify PIM implementations at Huge | Hero Digital. From discovery to deployment, I work closely with clients to design and build scalable product data systems that power eCommerce experiences.
         </p>
-      </div>
+      </motion.div>
 
       <h2 className="text-2xl font-bold mb-6 underline text-[#ebeaea]">My Journey</h2>
-      <div className="relative border-l-4 pl-6 border-l-[#ebeaea]">
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.5, ease: 'easeOut' }}
+        className="relative border-l-4 pl-6 border-l-[#ebeaea]"
+      >
         {timeline.map((event, index) => (
           <div key={index} className="relative mb-10 pl-6">
             <div className="absolute left-[-16px] top-4 w-8 h-[2px] bg-[#ebeaea]"></div>
@@ -51,7 +65,8 @@ export default function AboutMe() {
             </ul>
           </div>
         ))}
-      </div>
+      </motion.div>
+
     </div>
   );
 }

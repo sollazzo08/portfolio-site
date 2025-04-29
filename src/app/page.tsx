@@ -37,6 +37,7 @@ export default function Home() {
 
       <Link href="/about" className="mt-3 underline text-[#ebeaea]">Learn More</Link>
       <div className="flex flex-col space-y-7 mt-10 bg-[#191919]">
+
       <h1 className="text-lg underline text-[#ebeaea]">Recent Projects</h1>
           <ProjectsList limit={3} />
           <Link href="/projects" className="underline text-[#ebeaea]">View More</Link>

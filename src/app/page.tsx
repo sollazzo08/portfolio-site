@@ -4,6 +4,7 @@ import ProjectsList from "@/components/ProjectsList";
 import Link from "next/link";
 
 import {motion} from 'framer-motion';
+import TextScramble from "@/components/TextScramble";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <motion.div
           initial={{ opacity: 0, scale: 0.95 }} // Start hidden and a little lower
           animate={{ opacity: 1, scale: 1 }}  // Animate to fully visible and back to normal position
-          transition={{ duration: 1.5, ease: 'easeOut' }} // Timing
+          transition={{ duration: 1.8, ease: 'easeOut' }} // Timing
           className="relative flex flex-col space-y-7 bg-[#191919]"
       >
         <section className="flex">
@@ -23,15 +24,12 @@ export default function Home() {
           className="rounded-md object-cover"
         />
           <div className="flex flex-col ml-10">
-            <div className="mt-7 text-3xl text-[#ebeaea]">
-              Michael Sollazzo
-            </div>
-            <div>
-              Business Analyst & Developer
-            </div>
+            <TextScramble className="mt-7 text-3xl text-[#ebeaea]" text="Michael Sollazzo"/>
+            <TextScramble text="Business Analyst & Developer"/>
+
           </div>
         </section>
-          <p>I am Technical Consultant & Developer who leads all Salsify PIM implementations at Huge | Hero Digital.
+          <p>Hello! I’ve been in the tech industry for about 4 years, and for the past 3, I’ve been consulting clients on commerce platforms like Salesforce and Adobe Commerce, as well as product experience platforms like Salsify.
           </p>
       </motion.div>
 

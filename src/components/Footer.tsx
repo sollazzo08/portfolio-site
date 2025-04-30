@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="flex flex-col w-full bg-[#191919] text-gray-300 py-8 font-tektur">
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 text-center md:text-left w-full">
         <div>
-          <h3 className="text-lg underline font-semibold mb-2 text-[#ebeaea]">Pages </h3>
+          <h3 className="text-lg underline font-semibold mb-2 text-[#ebeaea]">Pages</h3>
           <ul className="space-y-2">
             <li><Link href="/" className="hover:text-white">Home</Link></li>
             <li><Link href="/about" className="hover:text-white">About</Link></li>

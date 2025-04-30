@@ -14,7 +14,7 @@ export default function ProjectsList({ limit }: ProjectsListProps) {
 <motion.ul
   initial={{ opacity: 0, x: -50 }}
   animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 1.5, ease: 'easeOut' }}
+  transition={{ duration: 1.8, ease: 'easeOut' }}
   className="space-y-4"
 >
   {displayedProjects.map((project: Project, index: number) => (

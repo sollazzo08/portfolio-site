@@ -38,11 +38,11 @@ export default function AboutMe() {
       <motion.div
           initial={{ opacity: 0, scale: 0.95 }} // Start hidden and a little lower
           animate={{ opacity: 1, scale: 1 }}  // Animate to fully visible and back to normal position
-          transition={{ duration: 1.5, ease: 'easeOut' }} // Timing
+          transition={{ duration: 1.8, ease: 'easeOut' }} // Timing
           className="mb-10"
       >
 
-        <p className="text-gray-400">I am Technical Consultant & Developer who leads all Salsify PIM implementations at Huge | Hero Digital. From discovery to deployment, I work closely with clients to design and build scalable product data systems that power eCommerce experiences.
+        <p className="text-gray-400">Hello! I’ve been in the tech industry for about 4 years, and for the past 3, I’ve been consulting clients on commerce platforms like Salesforce and Adobe Commerce, as well as product experience platforms like Salsify. I currently work at Huge, where I lead end-to-end Salsify implementations as a 7x certified expert — helping brands build scalable product data systems that drive seamless eCommerce experiences.
         </p>
       </motion.div>
 
@@ -50,7 +50,7 @@ export default function AboutMe() {
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.5, ease: 'easeOut' }}
+        transition={{ duration: 1.8, ease: 'easeOut' }}
         className="relative border-l-4 pl-6 border-l-[#ebeaea]"
       >
         {timeline.map((event, index) => (

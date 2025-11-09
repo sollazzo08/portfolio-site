@@ -17,7 +17,7 @@ export default function Home() {
       >
         <section className="flex">
           <img
-          src="/mike&sawyer3.jpg"
+          src="/mike-portfolio-site-image.jpg"
           alt="Michael Sollazzo"
           width="135"
           height="135"

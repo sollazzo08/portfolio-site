@@ -27,5 +27,5 @@ jobs:
 
       - name: Deploy 'out/' to Raspberry Pi
         run: |
-          rsync -avz --delete -e "ssh -i ~/.ssh/id_ed25519 -p ${{ secrets.PI_PORT }}" ./out/ public/ \
+          rsync -avz --delete -e "ssh -i ~/.ssh/id_ed25519 -p ${{ secrets.PI_PORT }}" ./out/ \
             ${{ secrets.PI_USER }}@${{ secrets.PI_HOST }}:${{ secrets.PI_TARGET_PATH }}

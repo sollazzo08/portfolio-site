@@ -30,10 +30,6 @@ The following secrets are configured in the repository settings under
 | `PI_SSH_KEY` | Private SSH key used for authentication |
 
 ## SSL Certificate Renewal (Manual DNS Challenge)
-
-Because port **80** is blocked by ISP, SSL certificates for
-**michaelsollazzo.dev** are renewed manually using the **DNS challenge** method.
-
 ---
 
 ### Steps to Renew Certificates

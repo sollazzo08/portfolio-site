@@ -1,11 +1,12 @@
 import { projects, Project } from "../data/projects";
 import { motion } from "framer-motion";
+import { TechBadge } from "./TechBadge";
 
 type ProjectsListProps = {
   limit?: number;
 };
 
-export default function ProjectsList({ limit }: ProjectsListProps) {
+export default function ProjectsList({limit}: ProjectsListProps) {
   const displayedProjects = limit ? projects.slice(0, limit) : projects;
 
   return (
@@ -41,7 +42,13 @@ export default function ProjectsList({ limit }: ProjectsListProps) {
                   {project.title}
                 </h3>
                 <p className="text-sm text-[#cfcfcf]">{project.description}</p>
+                                <div className="mt-3 flex flex-wrap gap-2">
+              {project.tech.map((tech) => (
+                <TechBadge key={tech} tech={tech} />
+              ))}
+            </div>
               </a>
+
             </motion.li>
           );
         })}

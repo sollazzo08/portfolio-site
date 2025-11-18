@@ -7,6 +7,12 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  title: "tx-normalizer",
+  description: "A TypeScript library and CLI tool that cleans and normalizes messy bank-exported CSV files into consistent, app-ready JSON transactions.",
+  github: "https://github.com/sollazzo08/tx-normalizer",
+  tech: ["typescript", "nodejs", "zod"],
+  },
+  {
     title: "bare-budget",
     description: "A simple personal budgeting app for tracking income, expenses, and savings with a minimal, no-frills approach.",
     github: "https://github.com/sollazzo08/bare-budget",
@@ -21,7 +27,7 @@ export const projects: Project[] = [
   {
     title: "weather-notification-service",
     description: "A lightweight microservice that fetches real-time weather updates using the OpenWeatherAPI, designed for easy integration.",
-    github: "https://github.com/sollazzo08/weather-notifcation-service",
+    github: "https://github.com/sollazzo08/weather-notification-service",
     tech: ["go"],
   },
   {

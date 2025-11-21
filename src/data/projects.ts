@@ -8,19 +8,25 @@ export type Project = {
 export const projects: Project[] = [
   {
   title: "tx-normalizer",
-  description: "A TypeScript library and CLI tool that cleans and normalizes messy bank-exported CSV files into consistent, app-ready JSON transactions.",
+  description: "A TypeScript library that transforms messy bank-exported CSV files into clean structured JSON transactions ready for budgeting apps and analytics.",
   github: "https://github.com/sollazzo08/tx-normalizer",
   tech: ["typescript", "nodejs", "zod"],
   },
   {
     title: "bare-budget",
-    description: "A simple personal budgeting app for tracking income, expenses, and savings with a minimal, no-frills approach.",
+    description: "A full-stack personal finance app built with Next.js, Node.js, and Postgres. Includes CSV transaction import, budgeting tools, categories, and a fully typed backend API.",
     github: "https://github.com/sollazzo08/bare-budget",
     tech: ["nodejs","express","nextjs","tailwind","postgres", "prisma", "docker"],
   },
   {
+    title: "distill",
+    description: "A cli tool that walks a codebase, extracts the essential project files, and generates an AI-friendly text snapshot. Perfect for sharing projects with LLMs without uploading the entire repo.",
+    github: "https://github.com/sollazzo08/distill",
+    tech: ["typescript", "cli"],
+  },
+  {
     title: "spotify-clone",
-    description: "A mobile Spotify clone built with React Native and Expo, featuring music playback, playlists, and a sleek UI.",
+    description: "A React Native / Expo project that recreates the core look and feel of the Spotify mobile app. This project focuses on UI/UX replication",
     github: "https://github.com/sollazzo08/spotify-clone",
     tech: ["react-native", "expo", "typescript"],
   },
@@ -38,7 +44,7 @@ export const projects: Project[] = [
   },
   {
     title: "portfolio-site",
-    description: "My developer portfolio, featuring my projects and skills.",
+    description: "My developer portfolio built with Next.js and Tailwind CSS, designed to showcase my projects, skills, and experience. The site is fully static and deployed on my Raspberry Pi using Nginx.",
     github: "https://github.com/sollazzo08/portfolio-site",
     tech: ["nextjs","typeScript","tailwind","nginx"],
   },

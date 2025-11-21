@@ -27,9 +27,8 @@ export function SocialStack() {
     >
       {/* GitHub */}
       <motion.a
-        href="https://github.com/YOUR_USERNAME"
+        href="https://github.com/sollazzo08"
         target="_blank"
-        rel="noopener noreferrer"
         className="hover:text-white transition-colors"
         variants={item}
       >
@@ -44,9 +43,8 @@ export function SocialStack() {
 
       {/* LinkedIn */}
       <motion.a
-        href="https://www.linkedin.com/in/YOUR_USERNAME"
+        href="https://www.linkedin.com/in/msollazzo-cs/"
         target="_blank"
-        rel="noopener noreferrer"
         className="hover:text-white transition-colors"
         variants={item}
       >
@@ -61,7 +59,7 @@ export function SocialStack() {
 
       {/* Email */}
       <motion.a
-        href="mailto:YOUR_EMAIL@gmail.com"
+        href="mailto:msollazzo08npm@gmail.com"
         className="hover:text-white transition-colors"
         variants={item}
       >

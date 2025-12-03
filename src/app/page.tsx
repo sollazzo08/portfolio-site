@@ -27,7 +27,7 @@ export default function Home() {
               className="mt-2 sm:mt-7 text-3xl text-[#ebeaea]"
               text="Michael Sollazzo"
             />
-            <TextScramble text="Business Analyst & Developer" />
+            <TextScramble text="Business Analyst & Software Developer" />
           </div>
         </section>
 

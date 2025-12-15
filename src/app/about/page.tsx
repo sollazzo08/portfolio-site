@@ -42,7 +42,7 @@ export default function AboutMe() {
           className="mb-10"
       >
 
-        <p className="text-gray-400">Hello! I’ve been in the tech industry for about 4 years, and for the past 3, I’ve been consulting clients on commerce platforms like Salesforce and Adobe Commerce, as well as product experience platforms like Salsify. I currently work at Huge, where I lead end-to-end Salsify implementations as a 7x certified expert — helping brands build scalable product data systems that drive seamless eCommerce experiences.
+        <p className="text-gray-400">Hello! I’ve been in the tech industry for 5+ years, and for the past 4, I’ve been consulting clients on commerce platforms like Salesforce and Adobe Commerce, as well as product experience platforms like Salsify. I currently work at Huge, where I lead end-to-end Salsify implementations as a 7x certified expert — helping brands build scalable product data systems that drive seamless eCommerce experiences.
         </p>
       </motion.div>
 

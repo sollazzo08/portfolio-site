@@ -32,8 +32,8 @@ export default function Home() {
         </section>
 
         <p>
-          Hello! I’ve been in the tech industry for about 4 years, and for the
-          past 3, I’ve been consulting clients on commerce platforms like
+          Hello! I’ve been in the tech industry for 5+ years, and for the
+          past 4, I’ve been consulting clients on commerce platforms like
           Salesforce and Adobe Commerce, as well as product experience platforms
           like Salsify.
         </p>
